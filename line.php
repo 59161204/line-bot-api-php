@@ -39,7 +39,7 @@ if ( sizeof($request_array['events']) > 0 )
 			$WEIGHT = "110";
 			$TALL = "170";
 			$SHZ = "9.5";
-			$reply_message = 'ชื่อ'.$MN.'อายุ'.$AGE.'ปี น้ำหนัก '.$WEIGHT.' kg. สูง'.$TALL.'cm. ขนาดรองเท้าเบอร์ '9.5.'US';
+			$reply_message = 'ชื่อ'.$MN.'อายุ'.$AGE.'ปี น้ำหนัก '.$WEIGHT.' kg. สูง'.$TALL.'cm. ขนาดรองเท้าเบอร์ '.$SHZ.'US';
 		}
 		else
 		{
