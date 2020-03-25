@@ -1,7 +1,7 @@
 <?php
 
 $API_URL = 'https://api.line.me/v2/bot/message/reply';
-$ACCESS_TOKEN = 'WjFez4NRiSw3VkGd4q0eMWAcDyJtH5ycqcIffRdyBLDXK3oIRoFtQ/XB+ohzPAuAwubSk0+a1BbEEDT1Q9ovSuxpHkcZa9G8TkXahXzxxs/J06N+H8O16b7Br4yHlakB9zNTQzQy7YgR9DrCU8blPAdB04t89/1O/w1cDnyilFU='; // Access Token ค่าที่เราสร้างขึ้น
+$ACCESS_TOKEN = 'TYJ13KKTF6QaUiNPCFVTCS1o2o6Fubjg4aTQ6e6hnfeonV7DYrUY4a+4+uemTF0z2ZufA4P44KtkVoO+BmFM8tOw4b/CPX5x6hp9RqrTTcJNsla0mreZ4lJ+PlmuW3NaKieloVlOEZ6w6jRNZf/vWQdB04t89/1O/w1cDnyilFU='; // Access Token ค่าที่เราสร้างขึ้น
 $POST_HEADER = array('Content-Type: application/json', 'Authorization: Bearer ' . $ACCESS_TOKEN);
 
 $request = file_get_contents('php://input');   // Get request content
@@ -30,11 +30,6 @@ if ( sizeof($request_array['events']) > 0 )
 					ผู้รายงานข้อมูล: นายกษิดิศ มากท้วม';
 		}
 		else if(($text== "ข้อมูลส่วนตัวของผู้พัฒนาระบบ")){
-// 			$name = "กษิดิศ มากท้วม";
-// 			$age = "22";
-// 			$weight = "110";
-// 			$tall = "170";
-// 			$shz = "9";
 			$reply_message = 'ชื่อนายกษิดิศ มากท้วม อายุ 22 ปี น้ำหนัก 110 kg. สูง 170 cm. ขนาดรองเท้าเบอร์ 9.5 US';
 		}
 		else
